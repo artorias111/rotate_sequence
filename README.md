@@ -9,6 +9,9 @@ By default, the script gives one output to stdout with a space at the position o
 # you can fold the fasta output to keep your fasta multiline
 python3 rotate_ref.py --ref /path/to/mt/genome.fa --pos 1100 | fold -w 60
 
+# I only want to visualize the rotated position, I don't care about the fasta format, I'm against plaintext
+python3 rotate_ref.py --ref /path/to/mt/genome.fa --pos 1100 >/dev/null
+
 # save the rotated file 
 python3 rotate_ref.py --ref /path/to/mt/genome.fa --pos 3986 > rotated_sequence.fa
 

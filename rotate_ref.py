@@ -31,7 +31,7 @@ left = new_str[:rotate_pos]
 right = new_str[rotate_pos:]
 
 print('rotated sequence:')
-print(right+' '+left, file = sys.stderr)
+print(right+'\n'+left, file = sys.stderr)
 
 
 sys.stdout.write(header+' rotated\n')
