@@ -6,9 +6,14 @@ By default, the script gives one output to stdout with a space at the position o
 
 ## Usage
 ```shell
-# save the rotated file by redirecting stdout
+# you can fold the fasta output to keep your fasta multiline
+python3 rotate_ref.py --ref /path/to/mt/genome.fa --pos 1100 | fold -w 60
+
+# save the rotated file 
 python3 rotate_ref.py --ref /path/to/mt/genome.fa --pos 3986 > rotated_sequence.fa
 
-# if, for some reason, you want to save the rotated site to a file
+# if, for some reason, you want to save the insepction sequence
 python3 rotate_ref.py --ref /path/to/mt/genome.fa --pos 3986 > rotated_sequence.fa 2> rotated_sequence_inspection.txt
 ```
+
+

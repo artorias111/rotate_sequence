@@ -34,5 +34,5 @@ print('rotated sequence:')
 print(right+' '+left, file = sys.stderr)
 
 
-sys.stdout.write(header+" rotated\n")
-sys.stdout.write(right+left)
+sys.stdout.write(header+' rotated\n')
+sys.stdout.write(right+left+'\n')
