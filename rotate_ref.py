@@ -30,7 +30,7 @@ f.close()
 left = new_str[:rotate_pos]
 right = new_str[rotate_pos:]
 
-print('rotated sequence:')
+print('rotated sequence:', file = sys.stderr)
 print(right+'\n'+left, file = sys.stderr)
 
 
