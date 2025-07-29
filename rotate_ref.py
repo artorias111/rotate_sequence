@@ -30,11 +30,9 @@ f.close()
 left = new_str[:rotate_pos]
 right = new_str[rotate_pos:]
 
-print(header+" test rotate", file = sys.stderr)
+print('rotated sequence:')
+print(right+' '+left, file = sys.stderr)
 
-print("{}{}", right, left, file = sys.stderr)
 
-
-final_str = right+left
 sys.stdout.write(header+" rotated\n")
-sys.stdout.write(final_str)
+sys.stdout.write(right+left)
